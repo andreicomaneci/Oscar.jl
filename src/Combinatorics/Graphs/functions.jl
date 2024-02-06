@@ -1194,7 +1194,7 @@ Directed graph with 7 nodes and the following edges:
 function adjacency_tree(ptree::PhylogeneticTree)
   udir_tree = Graph{Undirected}(ptree.pm_ptree.ADJACENCY)
   n = nv(udir_tree)
-  # list_edges = collect(edges(udir_tree))
+
   dir_tree = Graph{Directed}(n)
   
   queue = [1]
