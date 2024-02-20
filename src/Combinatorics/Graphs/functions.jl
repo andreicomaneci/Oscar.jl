@@ -439,9 +439,6 @@ Make a phylogenetic tree with given Newick format and check if it is equidistant
 ```jldoctest
 julia> ptree = phylogenetic_tree(Float64, "((H:3,(C:1,B:1):2):1,G:4);");
 
-<<<<<<< HEAD
-julia> equidistant(ptree)
-=======
 julia> g = edgegraph(c);
 
 julia> n_edges(g)
@@ -489,7 +486,6 @@ julia> triangle = simplex(2);
 julia> g = edgegraph(triangle);
 
 julia> has_edge(g, 1, 2)
->>>>>>> origin/master
 true
 ```
 """
@@ -645,11 +641,6 @@ julia> newick(tc)
 "G:40,(B:35,(C:30,H:30):5):5;"
 ```
 """
-<<<<<<< HEAD
-function tropical_median_consensus(trees::Vararg{PhylogeneticTree, N}) where {N}
-  return tropical_median_consensus(collect(trees))
-end
-=======
 function all_neighbors(g::Graph{T}, v::Int64) where {T <: Union{Directed, Undirected}}
     pmg = pm_object(g);
     result = union(Polymake._inneighbors(pmg, v-1), Polymake._outneighbors(pmg, v-1))
@@ -1225,4 +1216,3 @@ function graph_from_edges(edges::Vector{Vector{Int}},
                           n_vertices::Int=-1)
   return graph_from_edges(Undirected, [Edge(e[1], e[2]) for e in edges], n_vertices)
 end
->>>>>>> origin/master
