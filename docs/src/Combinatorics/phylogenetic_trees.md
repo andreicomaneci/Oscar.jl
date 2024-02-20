@@ -9,6 +9,7 @@ CurrentModule = Oscar
 Phylogenetic trees represent the evolutionary history of some species of consideration.
 Here we consider rooted phylogenetic trees with branch lengths as defined in [SS03](@cite).
 
+
 ## Construction
 
 ```@docs
