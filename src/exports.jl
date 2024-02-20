@@ -72,7 +72,6 @@ export GSet
 export GU
 export Gluing
 export Graph
-export Graphs
 export GroupConjClass
 export GroupCoset
 export GroupDoubleCoset
@@ -349,7 +348,7 @@ export comm!
 export common_components
 export common_refinement
 export complement
-export complement_class_reps
+export complement_classes
 export complement_equation
 export complement_equations
 export complement_ideal
@@ -357,6 +356,7 @@ export complement_of_point_ideal
 export complement_of_prime_ideal
 export complement_scheme
 export complement_system, has_complement_system, set_complement_system
+export complements
 export complete_bipartite_graph
 export complete_graph
 export complete_intersection_germ
@@ -370,7 +370,6 @@ export cone_from_inequalities
 export cones
 export conjugacy_class
 export conjugacy_classes
-export conjugacy_classes_maximal_subgroups
 export conjugacy_classes_subgroups
 export conjugate
 export conjugate_group
@@ -432,7 +431,6 @@ export deglex
 export degree
 export degrees_of_generators
 export degrevlex
-export dehomogenization
 export dehomogenization_map
 export dehomogenizer
 export del_pezzo_polytope
@@ -515,8 +513,7 @@ export facet_indices
 export facet_sizes
 export facets
 export factor_of_direct_product
-export factorisations
-export fan
+export factorizations
 export fano_matroid
 export fano_simplex
 export fat_ideal
@@ -611,7 +608,8 @@ export h_vector
 export halfspace
 export halfspace_matrix_pair
 export hall_subgroup
-export hall_subgroup_reps
+export hall_subgroup_classes
+export hall_subgroups
 export hall_system, has_hall_system, set_hall_system
 export has_du_val_singularities
 export has_edge
@@ -643,7 +641,6 @@ export homogeneity_vector
 export homogeneous_component
 export homogeneous_components
 export homogeneous_coordinates
-export homogenization
 export homogenization_map
 export homogenize
 export homogenizer
@@ -730,6 +727,7 @@ export is_algebraically_independent_with_relations
 export is_almost_simple, has_is_almost_simple, set_is_almost_simple
 export is_alternating
 export is_ample
+export is_ball
 export is_basepoint_free
 export is_bicoset
 export is_bijective
@@ -807,6 +805,7 @@ export is_lattice_polytope
 export is_left
 export is_local
 export is_loopless
+export is_manifold
 export is_maximal_subgroup
 export is_minor
 export is_mixed
@@ -853,6 +852,7 @@ export is_simplicial
 export is_singular
 export is_smooth
 export is_solvable, has_is_solvable, set_is_solvable
+export is_sphere
 export is_sporadic_simple, has_is_sporadic_simple, set_is_sporadic_simple
 export is_square
 export is_standard
@@ -944,7 +944,8 @@ export load_mps
 export localization
 export localized_ring
 export loops
-export low_index_subgroup_reps
+export low_index_subgroup_classes
+export low_index_subgroups
 export lower_central_series, has_lower_central_series, set_lower_central_series
 export lower_triangular_matrix
 export map
@@ -982,8 +983,8 @@ export maximal_extension
 export maximal_groebner_cone
 export maximal_normal_subgroups, has_maximal_normal_subgroups, set_maximal_normal_subgroups
 export maximal_polyhedra, maximal_polyhedra_and_multiplicities
-export maximal_subgroup_reps
-export maximal_subgroups, has_maximal_subgroups, set_maximal_subgroups
+export maximal_subgroup_classes, has_maximal_subgroup_classes, set_maximal_subgroup_classes
+export maximal_subgroups
 export metadata
 export milnor_algebra
 export milnor_number
@@ -1033,7 +1034,18 @@ export multiplicative_jordan_decomposition
 export multiplicities
 export multiplicities_eigenvalues
 export multiplicity
+export n_cones
+export n_connected_components
+export n_edges
+export n_facets
 export n_gon
+export n_maximal_cells
+export n_maximal_cones
+export n_maximal_polyhedra
+export n_points
+export n_polyhedra
+export n_rays
+export n_vertices
 export name
 export names_of_fusion_sources
 export natural_character
@@ -1075,28 +1087,17 @@ export normalizer
 export nullity
 export number_of_atlas_groups
 export number_of_complement_equations
-export number_of_cones
 export number_of_conjugacy_classes, has_number_of_conjugacy_classes, set_number_of_conjugacy_classes
-export number_of_connected_components
-export number_of_edges
-export number_of_facets
 export number_of_factors
 export number_of_generators
-export number_of_maximal_cells
-export number_of_maximal_cones
-export number_of_maximal_polyhedra
 export number_of_moved_points, has_number_of_moved_points, set_number_of_moved_points
 export number_of_partitions
 export number_of_patches
 export number_of_perfect_groups, has_number_of_perfect_groups
-export number_of_points
-export number_of_polyhedra
 export number_of_primitive_groups, has_number_of_primitive_groups
-export number_of_rays
 export number_of_small_groups, has_number_of_small_groups
 export number_of_standard_tableaux
 export number_of_transitive_groups, has_number_of_transitive_groups
-export number_of_vertices
 export numerator
 export objective_function
 export omega_group
@@ -1395,7 +1396,7 @@ export structure_sheaf
 export sub
 export subalgebra_membership
 export subalgebra_membership_homogeneous
-export subgroup_reps
+export subgroup_classes
 export subquo_type
 export subquotient
 export subscheme
@@ -1489,7 +1490,6 @@ export vertexindices
 export vertical_connectivity
 export vertices
 export vertices_and_rays
-export vf_group
 export visualize
 export volume
 export volume_form
